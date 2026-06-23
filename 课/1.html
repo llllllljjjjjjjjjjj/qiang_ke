@@ -1,0 +1,490 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+ 	<base href="https://xkxt2.ecjtu.edu.cn/">
+    <meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+    <title>学生选课系统-计划内选课</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/ecjtu_logo.ico" />
+    <link rel="stylesheet" type="text/css" href="styles/common.css">
+    <link rel="stylesheet" type="text/css" href="styles/edumis.css">
+    <link rel="stylesheet" type="text/css" href="styles/xk.css">
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script src="scripts/edumis_function.js"></script>
+</head>
+<body>
+<!-- header begin -->
+
+
+
+<div id="header">
+    <h1 class="logoHeader"></h1>
+    <a class="pageTitle" href="javascript:;" title="学分制选课">学生选课系统</a>
+    <div class="loginMes">
+        
+	 	<a class="user_u" title="个人信息" href="/index/index_getPersonalInfo.action">罗嘉靖</a>
+        <a class="out_u" title="退出" href="/login/quit_Quit.action">退出</a>
+        
+    </div>
+</div>
+<div id="nav">
+    <ul class="navMenu">
+        <li><a href="index.jsp">首页</a></li>
+        <li id="subMenu">
+            <a href="javascript:;">选课模块</a>
+            
+            <ul class="downListMenu">
+            
+                <li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=1&eduType=1">学期计划选课</a></li>
+                <li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=2&eduType=1">英语分级选课</a></li>
+                <li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=3&eduType=1">体育选课</a></li>
+                <li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=4&eduType=1">公共任选课</a></li>
+                <li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=5&eduType=1">重修选课</a></li>
+                
+           		<li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=1&eduType=2">计划内选课【辅修】</a></li>
+           		<li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=5&eduType=2">重修选课【辅修】</a></li>
+            </ul>
+        </li>
+        <li><a href="/common/common_selectedCourse.action">我的选课</a></li>  
+        <li><a href="/EduScheme/myEduScheme.jsp">我的培养方案</a></li>
+        <li><a href="/Schedule/Schedule_getUserSchedume.action">我的课表</a></li>
+        <li><a href="/index/index_getPersonalInfo.action">我的信息</a></li>
+    </ul>
+</div> 
+<div id="content">
+    <!-- 导航栏 -->
+    <div class="breadcrumb">
+        <ol>
+            <li><a href="#">主页&nbsp;&nbsp;/</a></li>
+            <li class="active">计划内选课</li>
+        </ol>
+        <span><script>timmer();</script></span>
+    </div>
+    <!-- 主体内容区 -->
+    <div id="container">
+        <table id="course-data" class="table_border dataTable">
+            <tr>
+                <th width="10%">学期</th>
+                <th>课程</th>
+                <th width="10%">课程要求</th>
+                <th width="8%">考核方式</th>
+                <th width="8%">学时</th>
+                <th width="8%">学分</th>
+                <th width="8%">选课类型</th>
+                <th width="10%">选课操作</th>
+                <th width="20%">选课信息</th>
+            </tr>
+            
+				<tr>
+					<td>2026.1</td>
+			  		<td>统计学</td>
+			  		<td>学科任选课</td>
+			  		<td>考试</td>
+			  		<td>56.0</td>
+			  		<td>3.5</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			可选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：统计学(20261-2)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：徐晓阳</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>工程概论</td>
+			  		<td>限选课</td>
+			  		<td>考查</td>
+			  		<td>32.0</td>
+			  		<td>2.0</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			必选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：工程概论(20261-9)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：刘立月(1),张红斌(2),李雄(3-4),岳远昊(5),廖仕成(6),张奕韬(7-8)</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>以用户为中心的软件开发Ⅲ</td>
+			  		<td>必修课</td>
+			  		<td>考查</td>
+			  		<td>48.0</td>
+			  		<td>3.0</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			必选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：以用户为中心的软件开发Ⅲ(20261-1)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：lhpy外教1,lhpy外教2(辅导)</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>数据库</td>
+			  		<td>必修课</td>
+			  		<td>考试</td>
+			  		<td>48.0</td>
+			  		<td>3.0</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			必选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：数据库(20261-1)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：lhpy外教3,lhpy外教4(辅导)</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>概率论与数理统计</td>
+			  		<td>必修课</td>
+			  		<td>考试</td>
+			  		<td>48.0</td>
+			  		<td>3.0</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			必选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：概率论与数理统计(20261-10)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：刘敏</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>大学物理Ⅱ</td>
+			  		<td>必修课</td>
+			  		<td>考试</td>
+			  		<td>48.0</td>
+			  		<td>3.0</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			必选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：大学物理Ⅱ(20261-29)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：钟文学</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>大学物理实验Ⅱ</td>
+			  		<td>必修课</td>
+			  		<td>考查</td>
+			  		<td>16.0</td>
+			  		<td>1.0</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			必选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：大学物理实验Ⅱ(20261-112)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：余萍(2467)</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>毛泽东思想和中国特色社会主义理论体系概论</td>
+			  		<td>必修课</td>
+			  		<td>考试</td>
+			  		<td>48.0</td>
+			  		<td>3.0</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			必选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：毛泽东思想和中国特色社会主义理论体系概论(20261-49)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：张多</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>形势与政策Ⅲ</td>
+			  		<td>必修课</td>
+			  		<td>考查</td>
+			  		<td>8.0</td>
+			  		<td>0.25</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			必选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：形势与政策Ⅲ(20261-2)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：肖赞</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>软件工程（A）</td>
+			  		<td>必修课</td>
+			  		<td>考查</td>
+			  		<td>32.0</td>
+			  		<td>2.0</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			必选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：软件工程（A）(20261-3)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：张红斌</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>Web 应用设计基础</td>
+			  		<td>学科任选课</td>
+			  		<td>考查</td>
+			  		<td>32.0</td>
+			  		<td>2.0</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			可选
+				  		
+			  		</td>
+			  		<td>
+				  		
+					  		
+					  			
+					  			
+					  				<a class="btnxk btn btn-success operate" href="TermPlan/TermPlan_getTeachTask.action?term=2026.1&courseID=1521102590">选修</a>
+					  			
+					  		
+				  		
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>大数据技术基础</td>
+			  		<td>必修课</td>
+			  		<td>考试</td>
+			  		<td>48.0</td>
+			  		<td>3.0</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			必选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：大数据技术基础(20261-3)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：刘冲</span>
+			  		</td>
+				</tr>
+			
+				<tr>
+					<td>2026.1</td>
+			  		<td>综合课程设计Ⅱ</td>
+			  		<td>必修课</td>
+			  		<td>考查</td>
+			  		<td>2.0</td>
+			  		<td>2.0</td>
+			  		<td>
+				  		
+				  			
+				  			
+				  			必选
+				  		
+			  		</td>
+			  		<td>
+				  		
+				  		
+				  			
+				  				
+				  				<span class="ok">已选</span>
+				  					
+				  		
+			  		</td>
+			  		<td class="infoOK">
+			  			<span>教学班：综合课程设计Ⅱ(20261-5)</span>
+			  			<span>教&nbsp;&nbsp;&nbsp;&nbsp;师：李雄</span>
+			  		</td>
+				</tr>
+			
+        </table>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="center">
+        <ul class="friendLink">
+            <li>友情链接：</li>
+            <li class="rightLine"><a href="http://jwxt.ecjtu.jx.cn" target="_blank">教务管理系统</a></li>
+            <li class="rightLine"><a href="http://jwc1.ecjtu.jx.cn" target="_blank">教务处主页</a></li>
+            <li><a href="http://www.ecjtu.jx.cn" target="_blank">交大主页</a></li>            
+        </ul>
+        <p>华东交通大学教务处版权所有 Copyright © <span id="year"></span> . All Rights Reserved<br />
+            地址:江西省南昌市经济技术开发区双港东大街808号</p>
+    </div>
+</div>
+<script>
+var date = new Date();
+date = date.getFullYear();
+window.onload=function(){
+    var year = document.getElementById("year");
+    year.innerHTML = date;
+}
+
+</script> 
+</body>
+<script src="scripts/common.js"></script>
+<script type="text/javascript" src="scripts/layer_edumis/layer.js" ></script>
+<script src="scripts/termPlanXK.js"></script>
+</html>

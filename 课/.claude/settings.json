@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch"
+    ]
+  },
+  "prompts": {
+    "rules": [
+      ".claude/rules/01-core-constitution.md",
+      ".claude/rules/02-reverse-playbook.md",
+      ".claude/rules/03-env-supplement.md",
+      ".claude/rules/04-jsvmp-guide.md",
+      ".claude/rules/05-sites-index.md"
+    ]
+  }
+}

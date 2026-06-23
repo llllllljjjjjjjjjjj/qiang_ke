@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+ 	<base href="https://xkxt2.ecjtu.edu.cn/">
+    <meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+    <title>学生选课系统-选课注意事项</title>
+    <meta http-equiv="keywords" content="华东交通大学,学分制,选课系统,学生,选课注意事项,胡振立,刘锦清,王海宝,朱济世">
+	<meta http-equiv="description" content="华东交通大学选课系统-选课注意事项">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="images/ecjtu_logo.ico" />
+    <link rel="stylesheet" type="text/css" href="styles/common.css">
+    <link rel="stylesheet" type="text/css" href="styles/edumis.css">
+    <link rel="stylesheet" type="text/css" href="styles/noticeInfo.css">
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script src="scripts/edumis_function.js"></script>
+</head>
+<body>
+<!-- header begin -->
+
+
+
+<div id="header">
+    <h1 class="logoHeader"></h1>
+    <a class="pageTitle" href="javascript:;" title="学分制选课">学生选课系统</a>
+    <div class="loginMes">
+        
+	 	<a class="user_u" title="个人信息" href="/index/index_getPersonalInfo.action">罗嘉靖</a>
+        <a class="out_u" title="退出" href="/login/quit_Quit.action">退出</a>
+        
+    </div>
+</div>
+<div id="nav">
+    <ul class="navMenu">
+        <li><a href="index.jsp">首页</a></li>
+        <li id="subMenu">
+            <a href="javascript:;">选课模块</a>
+            
+            <ul class="downListMenu">
+            
+                <li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=1&eduType=1">学期计划选课</a></li>
+                <li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=2&eduType=1">英语分级选课</a></li>
+                <li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=3&eduType=1">体育选课</a></li>
+                <li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=4&eduType=1">公共任选课</a></li>
+                <li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=5&eduType=1">重修选课</a></li>
+                
+           		<li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=1&eduType=2">计划内选课【辅修】</a></li>
+           		<li><a href="/xkNotice_getXKNoticeInfo.action?xkSelectType=5&eduType=2">重修选课【辅修】</a></li>
+            </ul>
+        </li>
+        <li><a href="/common/common_selectedCourse.action">我的选课</a></li>  
+        <li><a href="/EduScheme/myEduScheme.jsp">我的培养方案</a></li>
+        <li><a href="/Schedule/Schedule_getUserSchedume.action">我的课表</a></li>
+        <li><a href="/index/index_getPersonalInfo.action">我的信息</a></li>
+    </ul>
+</div> 
+<div id="content">
+    <!-- 导航栏 -->
+    <div class="breadcrumb">
+        <ol>
+        	<li><a href="#">主页&nbsp;&nbsp;/</a></li>
+            <li class="active">选课注意事项</li>
+        </ol>
+        <span><script>timmer();</script></span>
+    </div>
+    <!-- 主体内容区 -->
+    <div id="container">
+  		
+  			
+  				<div class="baseInfo">
+  					
+		            <h2>基本信息</h2>
+			    	<p><span>选课模块：</span>学期计划内选课</p>
+			    	<p><span>选课学期：</span>2026.1</p>
+			    	<p><span>选课阶段：</span><em class="strong-em">终选</em><em id="tips-show"></em></p>
+			    	
+			    	
+			    	
+				    	
+				    		<p><span>是否可退改选：</span>可以</p>
+				    	
+				    	
+			    	
+			    	<p><span>选课开始时间：</span>2026-06-15</p>
+			    	<p><span>选课结束时间：</span>2026-06-16</p>
+		    	</div>
+		    	<div class="noticeItem">
+			    	
+			            <h2>注意事项</h2>
+			            <ul>
+				    		
+				    			<li>1.请根据选课时间安排，在规定的时间内完成各门课程的选课，权限关闭后，将不能进行选课。  
+</li>
+				    		
+				    			<li>2.对于选课类型为“必选”的课程，每门课程都必须进行选课；对于选课类型为“可选”的课程，按照专业培养方案要求进行选课。
+</li>
+				    		
+				    			<li>3.学生未在网上选课的课程，不能进行该课程的课堂学习，任课教师也无法给出成绩。
+</li>
+				    		
+				    			<li><span style="color: red; font-weight: bold;">4.【特别提醒】选课结束后，学生应按规定参加已选课程的学习和考核，课程成绩记入本人成绩档案，若不参加学习和考核，该课程成绩也会按规定如实记录（如0分、“缺考”、“取消考试资格”等）。（尤其注意任选类课程）</span>
+</li>
+				    		
+				    			<li>5.为了更好的保证选课操作的流畅性，请使用IE8及以上版本，Chrome（谷歌）、Firefox（火狐）等浏览器，不建议使用 IE6 、IE7 等老版本浏览器。</li>
+				    		
+			            </ul>
+			        
+		        </div>
+		        <div class="btnXk">
+		        
+		        	
+			            
+				    		<a class="btn btn-success" style="margin-right:180px;" href="/TermPlan/TermPlan_getTeachTaskInfo.action">我要选课</a>
+				    	
+				    	
+				    	
+				    	
+				    	
+				    	
+				    	
+				    	
+				    	
+				    	<a id="myXkInfo" class="btn btn-primary" href="/common/common_selectedCourse.action">我的选课</a>
+		        	
+		        	
+		        
+		        </div>
+	    	
+	    	
+  			
+    </div>
+</div>
+
+<div id="footer">
+    <div class="center">
+        <ul class="friendLink">
+            <li>友情链接：</li>
+            <li class="rightLine"><a href="http://jwxt.ecjtu.jx.cn" target="_blank">教务管理系统</a></li>
+            <li class="rightLine"><a href="http://jwc1.ecjtu.jx.cn" target="_blank">教务处主页</a></li>
+            <li><a href="http://www.ecjtu.jx.cn" target="_blank">交大主页</a></li>            
+        </ul>
+        <p>华东交通大学教务处版权所有 Copyright © <span id="year"></span> . All Rights Reserved<br />
+            地址:江西省南昌市经济技术开发区双港东大街808号</p>
+    </div>
+</div>
+<script>
+var date = new Date();
+date = date.getFullYear();
+window.onload=function(){
+    var year = document.getElementById("year");
+    year.innerHTML = date;
+}
+
+</script> 
+</body>
+<script type="text/javascript" src="scripts/common.js"></script>
+<!-- <script type="text/javascript" src="scripts/layer_edumis/layer.js" ></script>
+<script type="text/javascript">
+$(".strong-em").mouseover(function(){
+	layer.tips('初选是什么意思。。。', '#tips-show',{
+		tips: [2, '#3595CC'],
+	    time: 5000
+	});
+});
+</script> -->
+</html>

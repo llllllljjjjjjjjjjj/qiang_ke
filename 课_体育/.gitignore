@@ -1,0 +1,78 @@
+# ====================
+# IDE / 编辑器
+# ====================
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ====================
+# Python
+# ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# ====================
+# Node.js
+# ====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ====================
+# 构建产物
+# ====================
+dist/
+build/
+out/
+
+# ====================
+# 日志与数据
+# ====================
+*.log
+*.csv
+*.xls
+*.xlsx
+
+# ====================
+# 压缩包 / 媒体
+# ====================
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.mp4
+*.avi
+*.mov
+
+# ====================
+# 浏览器调试配置（巨大且无需提交）
+# ====================
+chrome-debug-profile/
+chrome-debug-profile*/
+
+# ====================
+# 云同步 / 系统文件
+# ====================
+BaiduSyncdisk/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ====================
+# 敏感配置
+# ====================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
