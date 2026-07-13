@@ -17,7 +17,7 @@ TERM = '2026.1'
 COURSE_ID = '1505100033'
 
 # Cookie：JSESSIONID（Cookie 过期后需要重新登录获取并替换此处）
-JSESSIONID = '7941E88AC45A4A8191FCE64DAD4C1DDB'
+JSESSIONID = '2DA3BC0744E43F0EEE0E9FB173918C76'
 # ===========================================================
 
 # 公共配置

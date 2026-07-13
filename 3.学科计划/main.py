@@ -5,9 +5,9 @@ import sys
 from urllib.parse import parse_qs, urlparse
 
 cookies = {
-    'Username': 'MjAyNTA2MTAyMDAwMDIxOQ%3D%3D',
+    'Username': 'MjAyNTA2MTAyMDAwMDIxOQ==',
     'Password': 'MDYwOTE2TGpq',
-    'JSESSIONID': '6756949F751D760D8C81BDC3517E089A',
+    'JSESSIONID': '59A19AC99FDA252FD394FDC07F01A752',
 }
 
 
